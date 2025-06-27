@@ -36,42 +36,39 @@
 
         .social-icon:hover {
             transform: scale(1.15);
-            color: #ffffff; /* El ícono se vuelve blanco al pasar el mouse */
+            color: #ffffff;
         }
         
         .course-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+            background-clip: padding-box;
         }
 
         .course-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 30px -5px rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
 <body class="bg-gradient-to-br from-purple-800 via-pink-700 to-indigo-800 text-white min-h-screen flex flex-col items-center justify-center p-6 selection:bg-purple-600 selection:text-white">
 
     <div class="w-full max-w-lg text-center">
-        <!-- Encabezado con tu logo y título -->
+        <!-- Encabezado con tu logo de texto -->
         <header class="mb-12">
-            <img src="Ima/mega.jpg" alt="Logo MEGA" class="mx-auto rounded-full mb-6 border-4 border-purple-500 shadow-2xl transform hover:scale-110 transition-transform duration-300 w-36 h-36 object-cover">
-            <h1 class="text-7xl font-black brand-text-gradient mb-3 uppercase mega-title">MEGA</h1>
+            <h1 class="text-8xl md:text-9xl font-black brand-text-gradient mb-3 uppercase mega-title">MEGA</h1>
             <p class="text-xl text-slate-300">Conectando contigo.</p>
         </header>
 
         <!-- Sección de íconos de redes sociales -->
-        <div class="flex items-center justify-center space-x-8 mb-12">
+        <div class="flex items-center justify-center space-x-6 md:space-x-8 mb-16">
             <!-- TikTok -->
-            <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon text-slate-300">
+            <a href="https://www.tiktok.com/@viral50oficial" target="_blank" rel="noopener noreferrer" class="social-icon text-slate-300">
                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-2.43.05-4.86-.95-6.43-2.8-1.58-1.85-2.03-4.35-1.7-6.73.33-2.37 1.86-4.44 3.81-5.54.94-.53 2-.85 3.08-.98.01-2.54-.01-5.08.01-7.62Z"/></svg>
             </a>
             <!-- YouTube -->
             <a href="https://www.youtube.com/@Viral50Oficial" target="_blank" rel="noopener noreferrer" class="social-icon text-slate-300">
                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814Z M9.545 15.568V8.432L15.818 12l-6.273 3.568Z"/></svg>
-            </a>
-            <!-- Twitter / X -->
-            <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon text-slate-300">
-                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             </a>
             <!-- Facebook -->
             <a href="https://www.facebook.com/Viral50Oficial" target="_blank" rel="noopener noreferrer" class="social-icon text-slate-300">
@@ -86,20 +83,28 @@
         <!-- Nueva sección de cuadros de cursos -->
         <div class="space-y-6">
             <!-- Cuadro 1: Maestro Pizzero -->
-            <a href="https://megaoficial.github.io/MaestroPizzero/" target="_blank" rel="noopener noreferrer" class="course-card block bg-slate-800/70 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
-                <img src="Ima/pizza.png" alt="Imagen del curso de pizza" class="w-full h-40 object-cover">
-                <div class="p-6 text-left">
-                    <h3 class="text-2xl font-bold text-slate-100">Maestro Pizzero</h3>
-                    <p class="text-slate-300 mt-2">Domina el arte de la pizza y gestiona tu propio negocio.</p>
+            <a href="https://megaoficial.github.io/MaestroPizzero/" target="_blank" rel="noopener noreferrer" class="course-card block bg-gradient-to-br from-red-600 to-amber-500 rounded-2xl shadow-lg p-6 text-left flex items-center space-x-5">
+                <div class="flex-shrink-0">
+                     <svg class="w-12 h-12 text-white/80" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white">Maestro Pizzero</h3>
+                    <p class="text-amber-100 mt-1">Domina el arte de la pizza.</p>
                 </div>
             </a>
             
             <!-- Cuadro 2: Curso de TikTok -->
-            <a href="https://megaoficial.github.io/mega/" target="_blank" rel="noopener noreferrer" class="course-card block bg-slate-800/70 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
-                <img src="Ima/tiktok.JPG" alt="Imagen del curso de TikTok" class="w-full h-40 object-cover">
-                <div class="p-6 text-left">
-                    <h3 class="text-2xl font-bold text-slate-100">¿Quieres crecer en TikTok?</h3>
-                    <p class="text-slate-300 mt-2">Aprende todos los secretos para la viralidad en la plataforma.</p>
+            <a href="https://megaoficial.github.io/mega/" target="_blank" rel="noopener noreferrer" class="course-card block bg-gradient-to-br from-teal-500 to-cyan-500 rounded-2xl shadow-lg p-6 text-left flex items-center space-x-5">
+                 <div class="flex-shrink-0">
+                    <svg class="w-12 h-12 text-white/80" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9A2.25 2.25 0 0 0 13.5 5.25h-9A2.25 2.25 0 0 0 2.25 7.5v9A2.25 2.25 0 0 0 4.5 18.75Z" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white">Crece en TikTok</h3>
+                    <p class="text-cyan-100 mt-1">Aprende los secretos de la viralidad.</p>
                 </div>
             </a>
         </div>
@@ -117,3 +122,4 @@
     </script>
 </body>
 </html>
+
